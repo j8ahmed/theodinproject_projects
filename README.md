@@ -2,6 +2,9 @@
 
 I will try to add all of my projects to this folder.
 
+## To Do:
+
+- Update landing page to have a responsive design
 
 
 
