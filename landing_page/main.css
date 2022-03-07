@@ -21,12 +21,8 @@ body{
 }
 
 .container{
-  max-width: 1000px;
+  padding: 0 2rem;
   margin: auto;
-}
-
-.page-section{
-
 }
 
 .cta-btn{
@@ -46,7 +42,7 @@ header{
 .header-cont{
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 0;
+  padding: 2rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -72,9 +68,8 @@ header #logo{
 }
 .hero-cont{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
-  align-content: flex-start;
+  grid-template-columns: 1fr;
+  justify-content: center;
   gap: 2rem;
 }
 .hero-cont h1{
@@ -92,6 +87,7 @@ header #logo{
 .hero-cont #img-cont{
   background-color: grey;
   width: 100%;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +153,7 @@ header #logo{
 /* Call to Action */
 
 #cta-section{
-  padding: 100px 0;
+  padding: 100px 2rem;
 }
 
 .cta-cont{
@@ -200,4 +196,34 @@ footer{
 }
 .footer-cont p{
   text-align: center;
+}
+
+@media(min-width: 1300px){
+
+  .container{
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* hero section */
+
+  .hero-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 2rem;
+  }
+
+  /* cta section */
+  #cta-section{
+    padding: 100px 0;
+  }
+  .cta-cont{
+    max-width: 1200px;
+    padding: 40px 100px;
+  }
+  .header-cont{
+    padding: 1rem 0;
+  }
 }
