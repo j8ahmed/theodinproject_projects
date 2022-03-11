@@ -4,7 +4,7 @@
 
 ## To Do:
 
-- Build the app purely within the console (Later on will be updated)
+- Progress through the "Odin Project Curriculum" to get to the the part where we update the project and build out the U.I. .
 
 
 
