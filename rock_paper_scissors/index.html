@@ -2,9 +2,43 @@
 <html>
   <head>
     <title>Rock Paper Scissor Game</title>
+    <link href="main.css" rel="stylesheet">
   </head>
+  <body>
+    <header>
+      <div id="logo">
+	<h2>RPS - Project</h2>
+      </div>
+      <img src="" alt=""/>
+    </header>
 
-  <body style="background: black;">
+    <main id="game-cont">
+      <section id="game-msg-section">
+	<h2 id="game-msg">First to Win 5 Rounds Wins!</h2>
+	<button id="start-btn">Start</button>
+      </section>
+
+      <section id="choice-section">
+      </section>
+
+      <section id="results-section">
+	<table>
+	  <thead>
+	    <tr>
+	      <th></th>
+	      <th>Player: <span id="player-score">0</span></th>
+	      <th>Computer: <span id="computer-score">0</span></th>
+	    </tr>
+	  </thead>
+	  <tbody id="scoreboard">
+	  </tbody>
+	</table>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="https://j8ahmed.com/" target="_blank">copyright &copy; Jamal J8 Ahmed</a></p>
+    </footer>
   </body>
 
   <script src="main.js"></script>
