@@ -1,6 +1,6 @@
 # Rock Paper Scissors Project
 
-[Project Design](./docs/ui_design.png)
+![Project Design](./docs/ui_design.png)
 
 
 ## To Do:
