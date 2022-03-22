@@ -9,10 +9,8 @@ function etchASketch(){
   const menu = document.querySelector("#menu");
   const canvas = document.querySelector("#canvas");
   const canvasSize = canvas.clientWidth;
-
-  console.log(canvasSize);
-
   const units = 16;
+  const gapWidth = 1;
 
   for(let i=0; i < units; ++i){
     for(let j=0; j < units; ++j){
@@ -27,9 +25,11 @@ function etchASketch(){
   }
 
   function setCanvasDimensions(){
-    let unitSize = canvasSize / units;
-    canvas.style.gridTemplateRows = `repeat(${units}, ${unitSize}px)`;
-    canvas.style.gridTemplateColumns = `repeat(${units}, ${unitSize}px)`;
+    let numGridLines = gapWidth * (units - 1);
+    let unitSize = (canvasSize - numGridLines) / units;
+    canvas.style.gap = `${gapWidth}px`;
+    canvas.style.gridTemplateRows = `repeat(${units}, minmax(${unitSize}px, 1fr))`;
+    canvas.style.gridTemplateColumns = `repeat(${units}, minmax(${unitSize}px, 1fr))`;
   }
 
   setCanvasDimensions();
