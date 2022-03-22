@@ -7,6 +7,9 @@
    viewBox="0 0 264.58333 264.58333"
    height="1000"
    width="1000"
+   inkscape:export-filename="C:\Users\Jamal Ahmed\Documents\projects\programming_projects\web_projects\course_projects\the_odin_project\projects_theodinproject\etch-a-sketch\docs\ui_design.png"
+   inkscape:export-xdpi="48"
+   inkscape:export-ydpi="48"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -709,7 +712,7 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer2"
      inkscape:document-units="mm"
-     inkscape:cy="126.26907"
+     inkscape:cy="449.51788"
      inkscape:cx="442.44681"
      inkscape:zoom="0.49497475"
      inkscape:pageshadow="2"
@@ -787,7 +790,7 @@
        transform="matrix(0.26458333,0,0,0.26458333,36.866691,266.02046)"><tspan
          x="111.11678"
          y="280.82242"
-         id="tspan16992">Running Score:</tspan></text>
+         id="tspan17849">Running Score:</tspan></text>
     <g
        id="g16276"
        transform="translate(0,0.39591553)">
@@ -1182,7 +1185,7 @@
          transform="matrix(0.19623357,0,0,0.19623357,27.065922,-33.956363)"><tspan
            x="111.11678"
            y="280.82242"
-           id="tspan16994">Etch-A-Sketch</tspan></text>
+           id="tspan17851">Etch-A-Sketch</tspan></text>
     </g>
     <text
        xml:space="preserve"
@@ -1193,7 +1196,7 @@
        transform="matrix(0.05917836,0,0,0.05917836,114.36381,193.10125)"><tspan
          x="304.28571"
          y="938.57141"
-         id="tspan16996">Copyright © Jamal J8 Ahmed</tspan></text>
+         id="tspan17853">Copyright © Jamal J8 Ahmed</tspan></text>
     <rect
        style="fill:#38270a;fill-opacity:1;stroke:none;stroke-width:2;stroke-opacity:1;paint-order:fill markers stroke"
        id="rect103005"
@@ -1217,7 +1220,7 @@
        transform="matrix(0.26458333,0,0,0.26458333,102.83593,-346.92895)"><tspan
          x="111.11678"
          y="280.82242"
-         id="tspan16998">First to Win 5 Rounds</tspan></text>
+         id="tspan17855">First to Win 5 Rounds</tspan></text>
     <g
        id="g103017"
        transform="matrix(0.59015238,0,0,0.58948712,53.771952,-246.68817)"
@@ -1368,7 +1371,7 @@
        transform="matrix(0.19623357,0,0,0.19623357,21.185992,-367.95936)"><tspan
          x="111.11678"
          y="280.82242"
-         id="tspan17000">RPS Project</tspan></text>
+         id="tspan17857">RPS Project</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:66.6667px;line-height:1.15;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:4.47095;-inkscape-stroke:none;stop-color:#000000"
@@ -1378,7 +1381,7 @@
        transform="matrix(0.05917836,0,0,0.05917836,114.35007,-141.70665)"><tspan
          x="304.28571"
          y="938.57141"
-         id="tspan17002">copyright © Jamal J8 Ahmed</tspan></text>
+         id="tspan17859">copyright © Jamal J8 Ahmed</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:66.6667px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#000000;stroke-width:1.69543;-inkscape-stroke:none;stop-color:#000000"
@@ -1388,7 +1391,7 @@
        transform="matrix(0.15614448,0,0,0.15596846,73.409821,-201.05576)"><tspan
          x="111.11678"
          y="280.82242"
-         id="tspan17004">Player</tspan></text>
+         id="tspan17861">Player</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:66.6667px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#000000;stroke-width:1.69543;-inkscape-stroke:none;stop-color:#000000"
@@ -1398,7 +1401,7 @@
        transform="matrix(0.15614448,0,0,0.15596846,157.72784,-201.05576)"><tspan
          x="111.11678"
          y="280.82242"
-         id="tspan17006">Computer</tspan></text>
+         id="tspan17863">Computer</tspan></text>
     <path
        style="fill:#3c9f8d;fill-opacity:1;stroke:#000000;stroke-width:3.00001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        d="m 130.39429,-165.58457 v 50.35554"
@@ -1416,7 +1419,7 @@
        transform="matrix(0.15614448,0,0,0.15596846,52.322045,-237.77569)"><tspan
          x="67.14286"
          y="638.57141"
-         id="tspan17008">R1:</tspan></text>
+         id="tspan17865">R1:</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:66.6667px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#000000;stroke-width:1.69543;-inkscape-stroke:none;stop-color:#000000"
@@ -1426,7 +1429,7 @@
        transform="matrix(0.15614448,0,0,0.15596846,102.28828,-237.77569)"><tspan
          x="67.14286"
          y="638.57141"
-         id="tspan17010">W</tspan></text>
+         id="tspan17867">W</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:66.6667px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#000000;stroke-width:1.69543;-inkscape-stroke:none;stop-color:#000000"
@@ -1436,7 +1439,7 @@
        transform="matrix(0.15614448,0,0,0.15596846,133.51718,-237.77569)"><tspan
          x="67.14286"
          y="638.57141"
-         id="tspan17012">L</tspan></text>
+         id="tspan17869">L</tspan></text>
     <g
        id="g103151"
        transform="matrix(0.15346904,0,0,0.15328844,57.488208,-247.77519)"
@@ -2004,9 +2007,9 @@
        transform="matrix(0.26458333,0,0,0.26458333,102.96943,-315.62414)"><tspan
          x="111.11678"
          y="280.82242"
-         id="tspan17016"><tspan
+         id="tspan17873"><tspan
            style="font-family:Impact;-inkscape-font-specification:Impact"
-           id="tspan17014">3</tspan></tspan></text>
+           id="tspan17871">3</tspan></tspan></text>
     <g
        id="g8204"
        transform="matrix(0.49046149,0,0,0.47400809,112.90274,-4.679843)"
@@ -2028,7 +2031,7 @@
          transform="matrix(0.26458333,0,0,0.26458333,20.827512,64.877994)"><tspan
            x="412.85715"
            y="321.42856"
-           id="tspan17018">Clear</tspan></text>
+           id="tspan17875">Clear</tspan></text>
     </g>
     <image
        width="575.99792"
@@ -5549,6 +5552,6 @@ rkJggg==
        transform="matrix(0.12976793,0,0,0.12541464,50.660803,26.072851)"><tspan
          x="412.85715"
          y="321.42856"
-         id="tspan17020">Random Mode</tspan></text>
+         id="tspan17877">Random Mode</tspan></text>
   </g>
 </svg>

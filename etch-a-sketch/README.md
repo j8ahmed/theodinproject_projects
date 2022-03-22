@@ -6,8 +6,8 @@
 ## To Do:
 
 - [x] Finish design of project
-- [ ] Set up files and links between them
-- [ ] Use JavaScript to construct 16 x 16 grid of `divs` in a wrapper `div` on the webpage
+- [x] Set up files and links between them
+- [x] Use JavaScript to construct 16 x 16 grid of `divs` in a wrapper `div` on the webpage
 - [ ] Add an event listener for hover on each grid div to set it's color to black.
 - [ ] Add a button at the top of the screen that will clear all the divs of any color.
 - [ ] Add a button to toggle the mode of the paint from normal black to random colors.
@@ -21,7 +21,8 @@
 # Bonus To Do Items
 
 - [ ] Make the drawing trigger work for touch screens as well using the related event listeners
-- [ ]
+- [ ] Change from a hover feature to a click and hold feature to paint on the board.
+- [ ] Set pixel size based on responsive canvas size
 
 
 
@@ -31,7 +32,7 @@
 
 ## Meta Data
 
-Started On: 2022-03-21
+Started On: 2022-03-20
 
 
 ## Relevant Links
@@ -54,8 +55,8 @@ Cool Submissions 2
 
 ## Bug Fixes
 
-- []()
-- []()
+- [grid-template-column and row values in CSS - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)
+- [Getting Element's height and Width in JavaScript](https://www.javascripttutorial.net/javascript-dom/javascript-width-height/)
 - []()
 - []()
 - []()
