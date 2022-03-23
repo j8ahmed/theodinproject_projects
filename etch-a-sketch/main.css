@@ -1,6 +1,6 @@
 :root{
-  --bg-dark: #38270a;
-  --text-light: #d5d5d5;
+  --bg-dark: #008080;
+  --text-light: #ffffff;
 }
 *{
   font-family: roboto, sans-serif;
@@ -31,13 +31,13 @@ header #logo h2{
 #game-cont{
   min-height: 90vh;
   margin: auto;
-  padding: 2rem 1rem;
+  padding: 100px 1rem;
 }
 
 /* Game Canvas */
 #canvas{
   display: grid;
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   margin: auto;
   background: grey;
