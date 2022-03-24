@@ -11,8 +11,8 @@
 - [x] Add grid lines to canvas area.
 - [x] Add an event listener for hover on each grid div to set it's color to black.
 - [x] Add a button at the top of the screen that will clear all the divs of any color.
-- [ ] Add a button to toggle the mode of the paint from normal black to random colors.
-- [ ] 
+- [x] Add a button to toggle the mode of the paint from normal black to random colors.
+- [ ] Style project to match UI design doc. 
 - [ ] 
 - [ ] 
 - [ ] 
@@ -61,9 +61,9 @@ Cool Submissions 2
 - [Removing double border lines on grid items](https://stackoverflow.com/questions/47882924/preventing-double-borders-in-css-grid)
 - [JavaScript Hover Event Equals "mouseover"](https://data-flair.training/blogs/javascript-event-types/)
 - [Get HTML Element's Child Nodes](https://developer.mozilla.org/en-US/docs/Web/API/Element/children)
-- []()
-- []()
-- []()
-- []()
-- []()
+- [HTMLCollection vs. An Array](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)
+- [Box sizing](https://www.w3schools.com/cssref/css3_pr_box-sizing.asp)
+- [CSS Grid Course](https://youtu.be/t6CBKf8K_Ac)
+- [CSS Grid Guide - CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Cursor Pointer Property in CSS - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
 - []()

@@ -1,9 +1,11 @@
 :root{
   --bg-dark: #008080;
   --text-light: #ffffff;
+  --border-radius: 10px;
 }
 *{
   font-family: roboto, sans-serif;
+  box-sizing: border-box;
 }
 body{
   padding: 0;
@@ -29,19 +31,43 @@ header #logo h2{
 }
 
 #game-cont{
-  min-height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 550px;
+  min-height: 80vh;
   margin: auto;
-  padding: 100px 1rem;
+  padding: 50px 0;
+}
+
+/* Game Menu */
+#menu{
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 1rem;
+}
+
+#menu button{
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: var(--border-radius);
 }
 
 /* Game Canvas */
 #canvas{
   display: grid;
-  max-width: 600px;
   width: 100%;
   margin: auto;
   background: grey;
-  border: 3px solid black;
+  border: 5px solid black;
+  border-style: outset;
+  border-radius: var(--border-radius);
+}
+#canvas:hover{
+  cursor: crosshair;
 }
 
 .canvas-pixel{

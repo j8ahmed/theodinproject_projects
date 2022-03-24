@@ -6,11 +6,18 @@
 
 function etchASketch(){
 
+  const gameState = {
+    colorMode: false
+  };
   const menu = document.querySelector("#menu");
   const canvas = document.querySelector("#canvas");
   const canvasSize = canvas.clientWidth;
   const clearBtn = document.querySelector("#clear-btn");
   clearBtn.addEventListener("click", clearCanvas);
+
+  const colorBtn = document.querySelector("#color-mode-btn");
+  colorBtn.addEventListener("click", changeColorMode);
+
   const units = 16;
   const gapWidth = 1;
 
@@ -39,7 +46,10 @@ function etchASketch(){
 
   function fillUnit(e){
     let unit = e.currentTarget;
-    unit.style.background = "black";
+    unit.style.background = gameState.colorMode ? 
+      randRGB() :
+      "black";
+    console.log(unit.style.background)
   }
 
   function clearCanvas(){
@@ -48,6 +58,21 @@ function etchASketch(){
     for(const pixel of canvas.children){
       pixel.style.background = "";
     }
+  }
+
+  function changeColorMode(){
+    gameState.colorMode = !gameState.colorMode;
+
+    colorBtn.textContent = gameState.colorMode ?
+      "Black":
+      "Color Mode";
+  }
+
+  function randRGB(){
+    const R = Math.round(Math.random() * 255);
+    const G = Math.round(Math.random() * 255);
+    const B = Math.round(Math.random() * 255);
+    return `rgb(${R},${G},${B})`;
   }
 
 
