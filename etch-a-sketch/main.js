@@ -49,7 +49,6 @@ function etchASketch(){
     unit.style.background = gameState.colorMode ? 
       randRGB() :
       "black";
-    console.log(unit.style.background)
   }
 
   function clearCanvas(){

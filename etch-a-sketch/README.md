@@ -12,7 +12,7 @@
 - [x] Add an event listener for hover on each grid div to set it's color to black.
 - [x] Add a button at the top of the screen that will clear all the divs of any color.
 - [x] Add a button to toggle the mode of the paint from normal black to random colors.
-- [ ] Style project to match UI design doc. 
+- [x] Style project to match UI design doc. 
 - [ ] 
 - [ ] 
 - [ ] 
@@ -66,4 +66,7 @@ Cool Submissions 2
 - [CSS Grid Course](https://youtu.be/t6CBKf8K_Ac)
 - [CSS Grid Guide - CSS Tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Cursor Pointer Property in CSS - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+- []()
+- []()
+- []()
 - []()
