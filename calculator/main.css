@@ -1,0 +1,61 @@
+:root{
+  --bg-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --border-radius: 10px;
+}
+*{
+  font-family: roboto, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background: #333333;
+}
+header,footer{
+  background-color: var(--bg-dark);
+  padding: 1rem;
+  color: var(--text-light);
+}
+
+/* header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #logo h2{
+  margin: 0;
+  padding: 0;
+}
+
+#calculator-cont{
+}
+
+/* Calculator Display */
+
+
+/* Calculator Buttons */
+#buttons-cont{
+}
+
+
+
+
+
+
+/* footer */
+
+footer{
+  text-align: center;
+}
+
+footer a{
+  color: var(--text-light);
+  text-decoration: none;
+}
+footer a:hover{
+  color: var(--hi-light);
+}
