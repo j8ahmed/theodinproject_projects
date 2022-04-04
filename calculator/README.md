@@ -10,7 +10,7 @@
 - [x] Add rough HTML layout of elements (display, buttons)
 - [x] Plan and Outline functionality of code (How will the calculator work)
 - [x] Build out arithmetic functions (add, subtract, multiply, divide)
-- [ ] Build out core functions for calculator
+- [x] Build out core functions for calculator
   - [x] Build update state function by matching staging values and checking for differences (Type check is a bonus)
   - [x] Build button / decimal button callback function for their respective event listeners
     - [x] Build decimalCheck function to prevent multiple decimals inserted into Calculator
@@ -22,7 +22,10 @@
   - [x] Had to fix bug for pulling `<td>` element value
   - [x] Had to add case for the base case of the Calculator Display showing "0"
   - [x] Fix bug where second operand is being appended instead of replacing display
-- [ ] 
+
+- [x] Build reset function
+  - [x] Attach it to it's corresponding button
+
 - [ ] 
 - [ ] 
 - [ ] 
@@ -33,7 +36,27 @@
 
 - [ ] 
 
-## Tests
+## Bugs
+
+- [x] After an initial calculation pressing multiple operators repeatedly perform the stored operation instead of allowing for a change of operators
+  - [x] Fix incorrect representation of the first operand and chaining operations. The second operand needs to be preserved. I need to
+        change the way I handle the reset scenario.
+  ```
+  1 + 2 = 3
+        = 5
+	= 7
+	etc...
+  The second operator is preserved for repeated operations on the running total (i.e. the first operator in my representation). 
+  I need to fix this.
+  ```
+- [x] Fix multiplication operation bug
+- [ ] Fix initial/default addition scenario. "5,+,=" results in 10. "5,-,=" results in 0. 
+  - [ ] Fix incorrect naming of firstOperand to operand and total pairing.
+  - [ ] I broke the calculator LOL. so yeah. I changed my design because I found a flaw in it and now my stuff is trash. Oops. Back to the drawing board I guess.
+
+- [x] Fix doubling instead of holding onto the operand when repeating an operation using "=,=".
+  - [x] How do I separate the operand from the current display value?
+  
 
 1. `1 + 5 = 6`
 
@@ -44,17 +67,18 @@ How can I ensure there are less bugs with:
   1. Chaining operations
   2. Adjusting operators
 
-In most calculators one math operation is evaluated at a time.
-The basic math operation involves 4 steps:
-  1. Input the first number
-  2. Input the operator
-  3. Input the second number
-  4. Press "=" to perform the math operation by applying the operand to the first and second number.
+In an I Phone Calculator (which is what my calculator is based off of), what is being displayed is always the current total. 
+I originally thought that the first operation involved two operands provided by the user but it only ever involves one 
+operand provided by the user and the current total. 
 
-Although that is the generic process, there are a few extra options available at each step
-that will impact the operation.
+By default the total of almost all calculators is "0". Therefore our first operation will be 0 + "First input" and will
+initiated by the user pressing an operation button. 
 
-Options while inputting the first number:
+Ex: "9 + 1 = 10" is really "0 + 9 + 1 = 10"
+
+We are only ever inputting an operand and performing an operation with that and the running total.
+
+Options while inputting the operand number:
 
   - Add a decimal place (only allow one)
   - Add leading zeros (bad)
@@ -67,13 +91,38 @@ Options while inputting the operator:
   - Pressing the operator button multiple times (Should just change the operator)
   - Evaluating the previous operation while preparing the next opartion e.g. `1 + 2 - 1 + 5 - 2`
 
-Options while inputting the second number:
+What values do I need to stage?
 
-  - Add a decimal place (only allow one)
-  - Add leading zeros (bad)
-  - Backspace (correct input - Bonus)
-  - Clear (reset the calculator - global)
+- current operator
+- operand (last number before the operation took place)
 
+What values can I change directly?
+
+- display
+
+Calculator Processes:
+
+General:
+--------
+
+Initial value -> start input of new operand -> perform operation -> start input of new operand
+              \
+	       -> change default operand -> start input of new operand -> perform operation ->
+
+
+
+Construct operand:
+-----------------
+
+User inserts number -> Any operator changes are made permanent for the next operation (staging -> state)
+                    -> Decimal checking is done
+		    -> Check for 
+
+
+Perform Operation:
+------------------
+
+user inputs an operator -> Perform operation -> 
 ```
 
 
@@ -96,7 +145,7 @@ Cool Submissions 1
 - [View](https://captain-usopp.github.io/Calculator/)
 - []()
 
-## Bug Fixes
+## Bug Fixes References
 
 - [Table data span 2 columns](https://www.w3schools.com/tags/att_td_colspan.asp)
 - [For of loop docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)

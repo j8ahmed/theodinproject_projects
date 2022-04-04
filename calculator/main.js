@@ -6,7 +6,7 @@
  *   Core:
  *     - init();
  *     - updateState(newState)
- *     - updateStaging(StagingValues)
+ *     - updateStaging(stagingValues)
  *     - operation(n1, n2, op)
  *     - numDecPress(e)
  *     - operatorPress(e)
@@ -21,6 +21,7 @@
  *     - decimalCheck();
  *     - updateDisplay();        // Updates state and Element 
  *     - updateUI();             // Updates UI with state
+ *     - clearStaging            // Update state and set ready:false
  *
   */
 
@@ -31,13 +32,15 @@ function calculator(){
   const specialBtns = document.getElementsByClassName("special-btn");
   const display = document.getElementById("display");
   const state = {
-    firstOperand: 0,
-    currOperator: "+",
-    rTotal: 0,             // number
+    total: 0,              // number
+    operand: "",           // string
+    currOperator: "+",     // string
     display: "0",          // string
   }
   const stagingValues = {
-    ready: false,
+    ready: true,
+    currOperator: state.currOperator,
+    operand: state.operand
   }
 
   // Core functions
@@ -48,19 +51,31 @@ function calculator(){
       element => element.addEventListener("click", numDecPress));
     Array.from(opBtns).forEach(
       element => element.addEventListener("click", operatorPress));
+    Array.from(specialBtns).forEach(element => {
+      const value = element.textContent;
+      if(value === "AC")
+	element.addEventListener("click", reset)
+      else if(value === "C")
+	element.addEventListener("click", clear)
+
+//      else if(value === "C")
+//	element.addEventListener("click", clear)
+    });
     updateUI();
   }
 
   function updateState(){
     Object.keys(stagingValues).forEach(prop => {
-      if(prop in state && stagingValues[prop] !== state[prop]){
+      if(prop in state && stagingValues[prop] !== state[prop])
 	state[prop] = stagingValues[prop];
-      }  
     });
   }
 
-  function updateStaging(name, value){
-    stagingValues[name] = value;
+  function updateStaging(newValues){
+    Object.keys(newValues).forEach(prop => {
+      if(prop in stagingValues)
+	stagingValues[prop] = newValues[prop];
+    });
   }
 
   function operation(n1, n2, op){
@@ -71,11 +86,15 @@ function calculator(){
       case "-":
 	return subtract(n1, n2);
 
-      case "*":
+      case "x":
 	return multiply(n1, n2);
 
       case "/":
+	if(n2 === 0) return "Goofy!"
 	return divide(n1, n2);
+	
+      case "=":
+	return 
 
       default:
 	return add(n1, n2);
@@ -83,50 +102,94 @@ function calculator(){
   }
 
   function numDecPress(e){
+    /*
+     * When a number / decimal button is pressed it will:
+     * - clear the operand
+     * - Move any staging values to state
+     * - Update the calculator display
+     * 
+     * */
     let startSecondOperand = false;    
     const btnVal = e.target.textContent;
-    // Push any values in staging to state
+
+    // If operand is set clear it (since we are constructing a new one now)
+    if(state.operand)
+      clearOperand();
+
+    // Push staging to state
     if(stagingValues.ready){
-      updateState();
-      updateStaging("ready", false);
+      clearStaging();
       startSecondOperand = true;
     } 
 
     // Handle decimal input
     if(btnVal === "."){
-      if(decimalCheck()) 
-	return
+      if(decimalCheck()) return
       else{
 	updateDisplay(state.display + ".");
 	return
       } 
     }
-    // Handle reset case Display has only "0"
-    if(state.display === "0"){
-      console.log(btnVal)
-      updateDisplay(btnVal);
-    }
-    else if(startSecondOperand)
+
+    // Handle new operand
+    if(startSecondOperand)
       updateDisplay(btnVal);
     else
       updateDisplay(state.display + btnVal);
   }
 
   function operatorPress(e){
-    if(state.firstOperand !== 0 && state.currOperator !== ""){
-      // Perform operation and show result
+    /*
+     * When an operator button is pressed it will:
+     * - Check staging -> If NOT "ready" perform the operation 
+     * - Update state immediately with new results
+     * - Send pressed OP to staging for the next operation
+     * ??????
+     * - Update state, the stored value for the next operation
+     * */
+
+    const pressedOp = e.target.textContent;
+    const currOperand = state.operand ? state.operand : state.display;
+
+    // Perform operation if nothing in staging
+    // Perform operation if it's a repeat operation
+    if(!stagingValues.ready 
+      || (stagingValues.ready && pressedOp === "=")){
       const result = operation(
-	Number(state.firstOperand), 
-	Number(state.display), 
+	Number(state.total), 
+	Number(currOperand), 
 	state.currOperator
       );
-      updateDisplay(result);
+
+      const nDecimals = String(result).split(".")[1] ? 
+	String(result).split(".")[1].length :
+	0 ;
+      if(/\./.test(String(result)) && nDecimals > 6){
+	// Check if value is too large for screen > 6 digits
+	const val = Math.round(result * Math.pow(10, 6)) / Math.pow(10, 6)
+	console.log(val)
+	updateDisplay(val);
+	updateTotal(val);
+      }
+      else{
+	updateDisplay(result);
+	updateTotal(result);
+      }
+      updateOperand(currOperand);
     }
 
-    // Send updated values to staging to wait for Confirmation
-    updateStaging("currOperator", e.target.textContent);
-    updateStaging("firstOperand", state.display);
-    updateStaging("ready", true);
+    // prepare for the next operation  
+    if(pressedOp === "="){
+      updateStaging({
+	ready: true
+      });
+    }
+    else{
+      updateStaging({
+	currOperator: pressedOp,
+	ready: true
+      });
+    }
   }
 
   // Utility functions
@@ -134,25 +197,51 @@ function calculator(){
   function subtract(n1, n2){ return n1 - n2 }
   function multiply(n1, n2){ return n1 * n2 }
   function divide(n1, n2){ return n1 / n2 }
-  function reset(){}
-  function clear(){}
+  function reset(){
+    updateStaging({
+      ready: true,
+      currOperator: "+",     // string
+      operand: "",          // string
+    })
+    updateState();
+    
+    updateDisplay("0");
+    state.total = 0;
+  }
   function decimalCheck(){ 
     const regx = new RegExp(state.display);
     return regx.test(".") 
   }
 
   function updateDisplay(value){
-    state.display = String(value);
+    /*
+     * Update ONLY the State's display for UI Updates
+     * - Send new value to staging and immediately update state
+     * - Refresh the UI with the new values
+     * */
+    state.display = value;
     updateUI();
+  }
+
+  function updateTotal(value){
+    state.total = value;
+  }
+
+  function updateOperand(value){
+    state.operand = value;
   }
 
   function updateUI(){
     display.textContent = state.display;
+  }
 
-    // For Testing purposes
-    Object.keys(state).map(
-      prop => console.log(`${prop}: ${state[prop]}\n`))
-    console.log("---------")
+  function clearStaging(){
+    updateState();
+    updateStaging({ready: false});
+  }
+
+  function clearOperand(){
+    state.operand = "";
   }
 
   init()                    // Initialize calculator
