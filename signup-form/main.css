@@ -1,0 +1,144 @@
+:root{
+  --theme-main: #596D48;
+  --theme-main-lighter: #8ba375;
+  --theme-white: #FFFFFF;
+  --theme-white-darker: #F9FAFB;
+  --theme-grey: #E5E7EB;
+  --theme-blue: #3661DB;
+  --theme-red: #C44242;
+  --theme-green: #71c837;
+}
+*{
+  font-family: roboto, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--theme-white-darker);
+}
+
+#signup-cont{
+  display: grid;
+  grid-template: auto / 0.35fr 0.65fr ;
+  height: 100vh;
+}
+
+#logo-cont{
+  position: relative;
+  background: var(--theme-main);
+}
+#logo-bar{
+  position: relative;
+  top: 20vh;
+  padding: 2rem 0;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  font-size: 3rem;
+  color: var(--theme-white);
+}
+
+/* FORM */
+		
+#form-cont{
+  display: grid;
+  grid-template: 1.5fr 3fr 1fr / 1fr;
+  background: var(--theme-white-darker);
+}
+
+#heading{
+  padding: 2rem;
+  align-self: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 900px;
+}
+
+#main-section{
+  margin: 0;
+  padding: 40px 2rem;
+  background: var(--theme-white);
+  border: none;
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
+}
+
+#inputs-cont{
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+}
+
+#title{
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+input:not([type="submit"]){
+  padding: 0.5rem;
+  text-indent: 0.5rem;
+  border: 1px solid var(--theme-grey);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+input:focus{
+  border-color: var(--theme-blue);
+  box-shadow: 0 0 10px 0px rgba(0,0,0,0.1);
+}
+
+input:required:valid{
+  border-color: var(--theme-green);
+}
+
+input[type="password"]:invalid{
+  border-color: var(--theme-red);
+}
+
+input[type=submit]{
+  margin: 40px;
+  width: 200px;
+  background: var(--theme-main);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--theme-grey);
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  color: var(--theme-white);
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+  background: var(--theme-main-lighter);
+}
+
+
+@media(max-width: 740px){
+
+  #signup-cont{
+    grid-template: 0.35fr 1fr / auto ;
+    width: 100%;
+  }
+
+
+  #logo-bar{
+    position: relative;
+    top: 0;
+    padding: 2rem 0;
+  }
+
+}
