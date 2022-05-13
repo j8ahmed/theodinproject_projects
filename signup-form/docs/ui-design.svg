@@ -762,9 +762,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer2"
      inkscape:document-units="px"
-     inkscape:cy="632.49599"
-     inkscape:cx="-379.83674"
-     inkscape:zoom="0.29486353"
+     inkscape:cy="192.46192"
+     inkscape:cx="710.49818"
+     inkscape:zoom="0.58972705"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      borderopacity="1"
@@ -23108,7 +23108,7 @@ OmY1X7n6e8L0yTF0XnMzhJa4Kymb3BjHChoK2x/m8BXdYPT/D8xqb8PAMVnoeLizusI6Do9q8mm9
        transform="matrix(0.26458334,0,0,0.26458334,18.069429,3.5648597)"><tspan
          x="196.64268"
          y="311.75061"
-         id="tspan44186">LOGO</tspan></text>
+         id="tspan44500">LOGO</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:20px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:780.867;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
@@ -23118,25 +23118,41 @@ OmY1X7n6e8L0yTF0XnMzhJa4Kymb3BjHChoK2x/m8BXdYPT/D8xqb8PAMVnoeLizusI6Do9q8mm9
        transform="matrix(0.26458334,0,0,0.26458334,23.321138,-14.110521)"><tspan
          x="480.03259"
          y="143.88489"
-         id="tspan44190"><tspan
+         id="tspan44504"><tspan
            style="font-family:sans-serif;-inkscape-font-specification:sans-serif"
-           id="tspan44188">This is not a real online service! You know you need something like this in </tspan></tspan><tspan
+           id="tspan44502">This is not a real online service! You know you need something like this in </tspan></tspan><tspan
          x="480.03259"
          y="167.20466"
-         id="tspan44194"><tspan
+         id="tspan44508"><tspan
            style="font-family:sans-serif;-inkscape-font-specification:sans-serif"
-           id="tspan44192">your life to help you realize your deepest dreams. Sign up now to get started.
+           id="tspan44506">your life to help you realize your deepest dreams. Sign up now to get started.
 </tspan></tspan><tspan
          x="480.03259"
          y="190.52444"
-         id="tspan44198"><tspan
+         id="tspan44512"><tspan
            style="font-family:sans-serif;-inkscape-font-specification:sans-serif"
-           id="tspan44196">
+           id="tspan44510">
 </tspan></tspan><tspan
          x="480.03259"
          y="213.84422"
-         id="tspan44202"><tspan
+         id="tspan44516"><tspan
            style="font-family:sans-serif;-inkscape-font-specification:sans-serif"
-           id="tspan44200">You know you want to.</tspan></tspan></text>
+           id="tspan44514">You know you want to.</tspan></tspan></text>
+    <rect
+       style="display:inline;fill:#71c837;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect44204"
+       width="23.794821"
+       height="23.794821"
+       x="263.65247"
+       y="32.396347"
+       transform="scale(1,-1)" />
+    <rect
+       style="display:inline;fill:#8ba375;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       id="rect44224"
+       width="23.794821"
+       height="23.794821"
+       x="97.088669"
+       y="32.396347"
+       transform="scale(1,-1)" />
   </g>
 </svg>
