@@ -2,9 +2,14 @@
 
 I will try to add all of my projects to this folder.
 
-## To Do:
+## Projects:
 
-- Update landing page to have a responsive design
+- Landing Page
+- Calculator
+- Sign Up Form
+- Etch A Sketch
+- Rock Paper Scissors
+- Admin Dashboard
 
 
 

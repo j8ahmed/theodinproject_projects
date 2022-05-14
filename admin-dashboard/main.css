@@ -1,0 +1,25 @@
+:root{
+  --theme-white: #FFF;
+  --theme-black: #000;
+  --theme-grey: #636363;
+  --theme-grey-light: #E2E8F0;
+  --theme-main: #1992d4;
+  --theme-accent: #f0b429;
+
+  --text-black: var(--theme-black);
+  --text-whiete: var(--theme-white);
+  --text-grey: var(--theme-grey);
+
+  --theme-shadow: 5px 5px 10px 10px rgba(0,0,0,0.1);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background: var(--theme-grey-light);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
