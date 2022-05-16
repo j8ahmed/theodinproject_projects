@@ -156,11 +156,13 @@ a{
 
   #secondary-header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
     .user-info-cont{
-      display: flex;
+      display: grid;
+      grid-template-columns: auto 1fr;
       align-items: center;
 
       .profile-pic-cont{
@@ -238,7 +240,7 @@ a{
 
     #projects-cont{
       display: grid;
-      grid-template: auto / 1fr 1fr;
+      grid-template: auto / repeat(auto-fit, minmax(340px,1fr));
       gap: 2rem;
 
       .project-item{
