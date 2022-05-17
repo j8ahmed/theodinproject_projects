@@ -10,6 +10,7 @@ I will try to add all of my projects to this folder.
 - Etch A Sketch
 - Rock Paper Scissors
 - Admin Dashboard
+- Library
 
 
 
