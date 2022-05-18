@@ -6,6 +6,7 @@
   </head>
   <body>
     <button>&times;</button>
+    <button>&#43;</button>
       <table>
 	<thead>
 	  <tr>
@@ -26,16 +27,13 @@
 	  <form id='new-book-form'>
 
 	    <label for=title>Book Title</label>
-	    <input required data-book-prop-key=title name=title type=text id='title' />
+	    <input required type=text data-book-prop-key=title name=title id='title' />
 
 	    <label for=author>Book Author</label>
-	    <input required data-book-prop-key=author name=author type=text id='author' />
+	    <input required type=text data-book-prop-key=author name=author id='author' />
 
 	    <label for='page-number'>Number of Pages</label>
-	    <input required data-book-prop-key=pages name=pages type=number min=1 id='page-number' />
-
-	    <label for='page-check'>Test check</label>
-	    <input data-book-prop-key=check name=check type=checkbox value=true id='page-check' />
+	    <input required type=number data-book-prop-key=pages name=pages min=1 id='page-number' />
 
 	    <fieldset>
 	      <legend>Have you read the book?</legend>

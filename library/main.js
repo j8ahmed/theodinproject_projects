@@ -58,14 +58,23 @@ function displayBooks(library = myLibrary){
 addBookform.addEventListener('submit', function(e){
   e.preventDefault();
 
+  const newBook = {};
   const data = new FormData(e.target);
 
-  for(let pair of data.entries()){
-    console.log(pair[0] + ', ' + pair[1]);
+  for(let [key, value] of data.entries()){
+    if(key === 'read'){
+      value = value === 'true' ? true : false;
+    }
+    newBook[key] = value;
   }
 
-  // const inputs = e.target.querySelectorAll('[data-book-prop-key]');
-  // console.log(Array.from(inputs).map(input => input.value))
+  addBookToLibrary(new Book(
+    1+myLibrary.length,
+    newBook.title,
+    newBook.author,
+    newBook.pages,
+    newBook.read
+  ));
 
 })
 
