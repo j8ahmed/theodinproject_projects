@@ -5,8 +5,10 @@
     <link href="main.css" rel="stylesheet">
   </head>
   <body>
-    <button>&times;</button>
-    <button>&#43;</button>
+    <header>
+      <h1>Library</h1>
+    </header>
+    <button id='add-book-btn' data-target-modal='#modal-cont'>&#43;</button>
       <table>
 	<thead>
 	  <tr>
@@ -22,20 +24,31 @@
       </table>
 
       <div id='modal-cont'>
-	<div class='modal'>
-	  <h3>Add a Book</h3>
+	<div class='modal' id='modal'> 
+
+	  <div class='header'>
+	    <h3>Add a Book</h3>
+	    <button data-close-modal-btn>&times;</button>
+	  </div>
+	  
 	  <form id='new-book-form'>
 
-	    <label for=title>Book Title</label>
-	    <input required type=text data-book-prop-key=title name=title id='title' />
+	    <div class='input-cont'>
+	      <label for=title>Book Title</label>
+	      <input required type=text data-book-prop-key=title name=title id='title' />
+	    </div>
 
-	    <label for=author>Book Author</label>
-	    <input required type=text data-book-prop-key=author name=author id='author' />
+	    <div class='input-cont'>
+	      <label for=author>Book Author</label>
+	      <input required type=text data-book-prop-key=author name=author id='author' />
+	    </div>
 
-	    <label for='page-number'>Number of Pages</label>
-	    <input required type=number data-book-prop-key=pages name=pages min=1 id='page-number' />
+	    <div class='input-cont'>
+	      <label for='page-number'>Number of Pages</label>
+	      <input required type=number data-book-prop-key=pages name=pages min=1 id='page-number' />
+	    </div>
 
-	    <fieldset>
+	    <fieldset class='input-cont'>
 	      <legend>Have you read the book?</legend>
 
 	      <input data-book-prop-key=read name=read type=radio id='read-yes' value=true />
@@ -46,7 +59,9 @@
 
 	    </fieldset>
 
-	    <input required type=submit value='Add Book'/>
+	    <div class='input-cont'>
+	      <input required type=submit value='Add Book'/>
+	    </div>
 
 	  </form>
 	</div>

@@ -11,8 +11,11 @@
 
 
 const addBookform = document.querySelector('#new-book-form');
+const openModalBtn = document.querySelector('[data-target-modal]');
+const closeModalBtn = document.querySelector('[data-close-modal-btn]');
 
-let myLibrary = [];
+let myLibrary = [
+];
 
 function Book(id, title, author, pages, read) {
   this.id = id;
@@ -53,6 +56,9 @@ function displayBooks(library = myLibrary){
   })
 }
 
+function openModal(modal){ modal.classList.add('active'); }
+function closeModal(modal){ modal.classList.remove('active'); }
+
 /* ----- Event Listeners ----- */
 
 addBookform.addEventListener('submit', function(e){
@@ -76,19 +82,40 @@ addBookform.addEventListener('submit', function(e){
     newBook.read
   ));
 
+  // Close the form upon submission
+  const modal = e.target.closest('#modal-cont');
+  modal && closeModal(modal);
+
+  // Reset the form
+  e.target.reset();
+
+
 })
 
+openModalBtn.addEventListener('click', function(){
+  const modal = document.querySelector(openModalBtn.dataset.targetModal);
+  if(!modal) return
 
+  openModal(modal)
+  modal.addEventListener('click', function(e){ closeModal(e.target) })
+})
+closeModalBtn.addEventListener('click', function(){
+  const modal = closeModalBtn.closest('#modal-cont');
+  modal && closeModal(modal)
+})
+
+window.addEventListener('load', function(){
+  testData.forEach(function(book){
+    addBookToLibrary(book);
+  })
+})
 
 /* --------------------------- */
 
-/* Test Data */
+/* -------- Test Data -------- */
 
-
-const testBook = {
-  id: 1,
-  title: 'Test Book',
-  author: 'Jamal Ahmed',
-  pages: 50,
-  read: true,
-};
+const testData = [
+  { id: 1, title: 'Harry Potter and the Philosopher\'s Stone', author: 'J.K. Rowling', pages: 223, read: true, },
+  { id: 2, title: 'Harry Potter and the Chamber of Secrets', author: 'J.K. Rowling', pages: 342, read: true, },
+  { id: 3, title: 'Harry Potter and the Prisoner of Azkaban', author: 'J.K. Rowling', pages: 317, read: true, },
+];

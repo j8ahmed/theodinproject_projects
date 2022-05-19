@@ -44,7 +44,7 @@ Started On: 2022-05-16
 - [Chanding visibility/display on focus does not work?](https://stackoverflow.com/questions/21351476/why-changing-visibility-display-on-focus-does-not-work)
 - [What does `top: 0; left: 0; bottom: 0; right: 0;` mean?](https://stackoverflow.com/questions/28080910/what-does-top-0-left-0-bottom-0-right-0-mean)
 - [CSS property `pointer-events` - MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)
-- []()
+- [`HTMLFormElement.reset()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/reset)
 - []()
 - []()
 - []()
@@ -107,3 +107,25 @@ I originally sought to use a checkbox input for the "Have you read the book" inp
 Ultimately, I have learned that although the `checked` property is a boolean, using a checkbox input for a boolean with the absence of the check equaling `false` is not the best. Unless you want to manually find target checkbox inputs and pull the `value` and `checked` attributes alongside names to get the correct information needed.
 
 It is better to just use two linked radio inputs imo. The `value` property from the `checked` radio button is automatically used in the FormData constructor. It makes things a lot cleaner without having to manually target form elements. I need to look into this more but for now this will be my approach.
+
+### Resetting forms with `HTMLFormElement.reset()`
+
+The `HTMLFormElement.reset()` method restores a form element's default values. 
+
+Important notes about the `.reset()` method:
+
+- This method does the same thing as clicking the form's `<`input type="reset"> control.
+- If a form control (such as a reset button) has a `name` or `id` of `"reset"` it will mask the form's `.reset()` method. It does not reset other attributes in the input, such as `disabled`.
+- If `setAttribute()` is called to set the value of a particular attribute, a subsequent call to `reset()` won't reset the attribute to its default value, but instead will keep the attribute at whatever value the `setAttribute()` call set it to.
+
+Syntax:
+
+- Parameters = none (Has no parameters)
+- return value = none (Gives no return value) = `undefined`
+
+Example:
+
+```
+document.getElementById('myform').reset();
+```
+
