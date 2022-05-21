@@ -3,7 +3,6 @@
 
 ## To Do:
 
-- [ ] 
 
 # Bonus To Do Items
 

@@ -32,6 +32,15 @@ main {
   justify-content: center;
   align-content: center;
 }
+main #display {
+  height: 2rem;
+}
+main #btn-cont {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
 table {
   margin: 2rem;
   border-collapse: collapse;
@@ -43,7 +52,7 @@ table td {
   justify-content: center;
   align-self: center;
   border: 3px solid #000;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 5rem;
   text-align: center;
   padding: 0;
