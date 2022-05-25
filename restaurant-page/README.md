@@ -8,7 +8,7 @@
 
 - [x] Setup webpack to work with my unique project setup
 - [x] Add sass styling to my webpack config
-- [ ] Setup the webpack dev server for hot reloading
+- [x] Setup the webpack dev server for hot reloading
 - [ ] Manually code HTML and styles
 - [ ] Configure modules representing HTML pages
 

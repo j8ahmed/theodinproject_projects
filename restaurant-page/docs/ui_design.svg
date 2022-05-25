@@ -691,9 +691,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer2"
      inkscape:document-units="px"
-     inkscape:cy="-561.42856"
-     inkscape:cx="417.14285"
-     inkscape:zoom="0.35000001"
+     inkscape:cy="825.71426"
+     inkscape:cx="10725.714"
+     inkscape:zoom="0.17500001"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      borderopacity="1"
@@ -963,10 +963,10 @@
        y="55.336685"
        transform="scale(1,-1)" />
     <rect
-       style="fill:#198754;stroke-width:0.483316;paint-order:fill markers stroke;fill-opacity:1"
+       style="fill:#343a40;fill-opacity:1;stroke-width:1.63027;paint-order:fill markers stroke"
        id="rect2828"
        width="762"
-       height="47.624996"
+       height="541.86664"
        x="0"
        y="0" />
     <text
@@ -975,26 +975,267 @@
        x="120"
        y="0"
        id="text4323"
-       transform="matrix(0.26458333,0,0,0.26458333,61.95875,33.127175)"><tspan
+       transform="matrix(0.76795758,0,0,0.76795758,286.10775,253.65662)"><tspan
          x="120"
          y="0"
-         id="tspan7801">Tic-Tac-Toe</tspan></text>
-    <path
-       style="fill:#0000ff;stroke:#000000;stroke-width:2.67581;paint-order:fill markers stroke"
-       d="M 328.40361,137.7632 V 457.86365"
-       id="path2931" />
-    <path
-       style="fill:#0000ff;stroke:#000000;stroke-width:2.67581;paint-order:fill markers stroke"
-       d="M 435.91126,137.7632 V 457.86365"
-       id="path3013" />
-    <path
-       style="fill:#0000ff;stroke:#000000;stroke-width:2.67581;paint-order:fill markers stroke"
-       d="M 541.05022,243.17007 H 220.94977"
-       id="path3157" />
-    <path
-       style="fill:#0000ff;stroke:#000000;stroke-width:2.67581;paint-order:fill markers stroke"
-       d="M 541.05022,349.62732 H 220.94977"
-       id="path3188" />
+         id="tspan38701">Restaurant</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text7219"
+       transform="matrix(0.76795758,0,0,0.76795758,160.00217,342.859)"><tspan
+         x="120"
+         y="0"
+         id="tspan38703">Menu</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text10081"
+       transform="matrix(0.76795758,0,0,0.76795758,275.28649,342.859)"><tspan
+         x="120"
+         y="0"
+         id="tspan38705">About</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text10367"
+       transform="matrix(0.76795758,0,0,0.76795758,403.41886,342.859)"><tspan
+         x="120"
+         y="0"
+         id="tspan38707">Contact</tspan></text>
+    <rect
+       style="fill:#343a40;fill-opacity:1;stroke-width:1.63027;paint-order:fill markers stroke"
+       id="rect10797"
+       width="762"
+       height="541.86664"
+       x="988.78564"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:68.9057px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text10801"
+       transform="matrix(0.76795758,0,0,0.76795758,1011.8047,90.795483)"><tspan
+         x="120"
+         y="0"
+         id="tspan38709">Menu</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.907457;paint-order:fill markers stroke"
+       id="rect11799"
+       width="147.26701"
+       height="125.48808"
+       x="1041.7024"
+       y="137.58333" />
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text11941"
+       transform="matrix(0.76795758,0,0,0.76795758,1021.113,305.48594)"><tspan
+         x="120"
+         y="0"
+         id="tspan38711">Menu Item 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.6717px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="60.664753"
+       y="0"
+       id="text13806"
+       transform="matrix(0.76795758,0,0,0.76795758,993.81275,351.59903)"><tspan
+         x="60.664753"
+         y="0"
+         id="tspan38713">Food Description</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.907457;paint-order:fill markers stroke"
+       id="rect17791"
+       width="147.26701"
+       height="125.48808"
+       x="1241.8861"
+       y="137.58333" />
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text17795"
+       transform="matrix(0.76795758,0,0,0.76795758,1221.2968,305.48594)"><tspan
+         x="120"
+         y="0"
+         id="tspan38715">Menu Item 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.6717px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="60.664753"
+       y="0"
+       id="text17799"
+       transform="matrix(0.76795758,0,0,0.76795758,1193.9965,351.59903)"><tspan
+         x="60.664753"
+         y="0"
+         id="tspan38717">Food Description</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.907457;paint-order:fill markers stroke"
+       id="rect17801"
+       width="147.26701"
+       height="125.48808"
+       x="1442.0696"
+       y="137.58333" />
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="120"
+       y="0"
+       id="text17805"
+       transform="matrix(0.76795758,0,0,0.76795758,1421.4804,305.48594)"><tspan
+         x="120"
+         y="0"
+         id="tspan38719">Menu Item 1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.6717px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="60.664753"
+       y="0"
+       id="text17809"
+       transform="matrix(0.76795758,0,0,0.76795758,1394.1801,351.59903)"><tspan
+         x="60.664753"
+         y="0"
+         id="tspan38721">Food Description</tspan></text>
+    <rect
+       style="fill:#343a40;fill-opacity:1;stroke-width:1.63027;paint-order:fill markers stroke"
+       id="rect18006"
+       width="762"
+       height="541.86664"
+       x="2770.4971"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:68.9057px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="-59.666233"
+       y="0"
+       id="text18010"
+       transform="matrix(0.76795758,0,0,0.76795758,3926.0564,90.795483)"><tspan
+         x="-59.666233"
+         y="0"
+         id="tspan38725"><tspan
+           style="text-align:start;text-anchor:start"
+           id="tspan38723">Contact</tspan></tspan></text>
+    <rect
+       style="fill:#343a40;fill-opacity:1;stroke-width:1.63027;paint-order:fill markers stroke"
+       id="rect18407"
+       width="762"
+       height="541.86664"
+       x="1863.4607"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:68.9057px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="30.166883"
+       y="0"
+       id="text18411"
+       transform="matrix(0.76795758,0,0,0.76795758,1890.5757,90.795483)"><tspan
+         x="30.166883"
+         y="0"
+         id="tspan38727">About</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.6717px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:818.793;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="60.664753"
+       y="0"
+       id="text18421"
+       transform="matrix(0.76795758,0,0,0.76795758,1868.4877,157.31928)"><tspan
+         x="60.664753"
+         y="0"
+         id="tspan38729">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </tspan><tspan
+         x="60.664753"
+         y="23.772453"
+         id="tspan38731">has been the industry's standard dummy text ever since the 1500s, when an unknown </tspan><tspan
+         x="60.664753"
+         y="47.544906"
+         id="tspan38733">printer took a galley of type and scrambled it to make a type specimen book. It has </tspan><tspan
+         x="60.664753"
+         y="71.317359"
+         id="tspan38735">survived not only five centuries, but also the leap into electronic typesetting, remaining </tspan><tspan
+         x="60.664753"
+         y="95.089813"
+         id="tspan38737">essentially unchanged. It was popularised in the 1960s with the release of Letraset </tspan><tspan
+         x="60.664753"
+         y="118.86227"
+         id="tspan38739">sheets containing Lorem Ipsum passages, and more recently with desktop publishing </tspan><tspan
+         x="60.664753"
+         y="142.63472"
+         id="tspan38741">software like Aldus PageMaker including versions of Lorem Ipsum.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20.6717px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:818.793;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="60.664753"
+       y="0"
+       id="text26954"
+       transform="matrix(0.76795758,0,0,0.76795758,1868.4877,305.94548)"><tspan
+         x="60.664753"
+         y="0"
+         id="tspan38743">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum </tspan><tspan
+         x="60.664753"
+         y="23.772453"
+         id="tspan38745">has been the industry's standard dummy text ever since the 1500s, when an unknown </tspan><tspan
+         x="60.664753"
+         y="47.544906"
+         id="tspan38747">printer took a galley of type and scrambled it to make a type specimen book. It has </tspan><tspan
+         x="60.664753"
+         y="71.317359"
+         id="tspan38749">survived not only five centuries, but also the leap into electronic typesetting, remaining </tspan><tspan
+         x="60.664753"
+         y="95.089813"
+         id="tspan38751">essentially unchanged. It was popularised in the 1960s with the release of Letraset </tspan><tspan
+         x="60.664753"
+         y="118.86227"
+         id="tspan38753">sheets containing Lorem Ipsum passages, and more recently with desktop publishing </tspan><tspan
+         x="60.664753"
+         y="142.63472"
+         id="tspan38755">software like Aldus PageMaker including versions of Lorem Ipsum.</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.32292;paint-order:fill markers stroke"
+       id="rect36636"
+       width="323.54758"
+       height="323.54758"
+       x="3156.0327"
+       y="165.40242" />
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="90.56868"
+       y="0"
+       id="text17805-0"
+       transform="matrix(0.76795758,0,0,0.76795758,2756.6129,184.41937)"><tspan
+         x="90.56868"
+         y="0"
+         id="tspan38757">Address:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="90.56868"
+       y="0"
+       id="text38053"
+       transform="matrix(0.76795758,0,0,0.76795758,2756.6129,322.75865)"><tspan
+         x="90.56868"
+         y="0"
+         id="tspan38759">Phone Number:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:34.4529px;line-height:1.15;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:start;white-space:pre;inline-size:2752.09;fill:#ffffff;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000"
+       x="90.56868"
+       y="0"
+       id="text38407"
+       transform="matrix(0.76795758,0,0,0.76795758,2756.6129,436.1515)"><tspan
+         x="90.56868"
+         y="0"
+         id="tspan38761">Email:</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
