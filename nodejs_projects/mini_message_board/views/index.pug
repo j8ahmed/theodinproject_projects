@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+
+  p Welcome to my #{title}
+
+  h2 Messages:
+  ul
+    each msg in messages
+      li 
+        h3= msg.user
+        p= msg.text
+        h4= msg.added
+

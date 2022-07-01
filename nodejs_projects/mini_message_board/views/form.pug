@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+
+  form(method='POST' action='/new')
+    div.input-cont
+      label(for='usernameInput') Username
+      input#usernameInput(type='text' name='username')
+    
+    div.input-cont
+      label(for='messageInput') Message
+      input#messageInput(type='text' name='message')
+
+    div.input-cont
+      button(type='submit') Submit
+

@@ -1,0 +1,2 @@
+# This is a file required by Heroku. I do not know if comments are allowed so remove it this is an issue. This procfile is apparently needed to run an application on Heroku.
+web: node ./bin/www
