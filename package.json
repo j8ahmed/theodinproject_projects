@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Projects from The Odin project curriculum",
   "main": "index.js",
+  "engine": {
+    "node": "16.x.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "restaurant": "webpack serve --open --config ./restaurant-page/webpack.config.js --watch-files ./restaurant-page/src"
@@ -31,6 +34,13 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "async": "^3.2.4",
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.4.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
   }
 }
