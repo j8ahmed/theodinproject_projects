@@ -1,5 +1,19 @@
 const express = require('express')
+const mongoose = require('mongoose')
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const createError = require('http-errors');
 
+// Import Routers
+const indexRouter = require('./routes')
+const itemRouter = require('./routes/item/')
+const categoryRouter = require('./routes/category/')
+
+// Connect to Database
+mongoose.connect('mongodb://127.0.0.1:27017/invetory_management_app', {useNewUrlParser: true, useUnifiedTopology: true})
+const db = mongoose.connection
+db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 
 
@@ -7,9 +21,9 @@ const express = require('express')
 const app = express()
 
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
+app.use('/', indexRouter)
+app.use('/items', itemRouter)
+app.use('/categories', categoryRouter)
 
 
 

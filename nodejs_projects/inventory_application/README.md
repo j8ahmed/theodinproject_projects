@@ -44,11 +44,23 @@ Fields:
 Category:
 ---------
 
+Index
+  - Homepage ('/')
+
+
 Routes
   - create (construct)
+    - GET
+    - POST
   - read
+    - GET all categories
+    - Get one category
   - update
+    - GET
+    - POST
   - delete
+    - GET
+    - POST
 
 
 Item:
@@ -56,9 +68,22 @@ Item:
 
 Routes
   - create (construct) 
+    - GET
+    - POST
   - read
+    - GET all items
+    - Get one item
   - update
+    - GET
+    - POST
   - delete
+    - GET
+    - POST
+```
+
+## Middleware
+
+```
 
 ```
 
@@ -66,8 +91,12 @@ Routes
 
 ## Tasks
 
-1. [ ] Finish writing basic plans for the app.
-2. [ ] Construct file/folder structure skeleton for the app.
+1. [x] Finish writing basic plans for the app.
+2. [x] Construct file/folder structure skeleton for the app.
+3. [x] Construct Routes and add to app initializer
+4. [ ] Construct Controllers
+5. [ ] Construct Models
+6. [ ] Construct Views
 
 
 ---
