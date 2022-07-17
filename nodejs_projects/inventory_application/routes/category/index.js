@@ -1,43 +1,35 @@
 const express = require('express') 
 const router = express.Router()
+const {
+  category_get,
+  categories_get,
+  create_category_get,
+  create_category_post,
+  update_category_get,
+  update_category_post,
+  delete_category_get,
+  delete_category_post,
+} = require('../../controllers/categoryController')
 
 
-/* Construct a new category page */
+/* Create */
 router
-  .get('/create', (req, res) => {
-    res.send('GET category Construction form page')
-  })
-  .post('/create', (req, res) => {
-    res.send('POST category Construction form')
-  })
+  .get('/create', create_category_get)
+  .post('/create', create_category_post)
 
-/* Update a category page */
+/* Update */
 router
-  .get('/:category/update', (req, res) => {
-    res.send('GET category update form page')
-  })
-  .post('/:category/update', (req, res) => {
-    res.send('POST category update form')
-  })
+  .get('/:category/update', update_category_get)
+  .post('/:category/update', update_category_post)
 
-/* Delete a category page */
+/* Delete */
 router
-  .get('/:category/delete', (req, res) => {
-    res.send('GET category delete form page')
-  })
-  .post('/:category/delete', (req, res) => {
-    res.send('POST category delete form')
-  })
+  .get('/:category/delete', delete_category_get)
+  .post('/:category/delete', delete_category_post)
 
-
-/* GET specific category page */
-router.get('/:category', (req, res) => {
-  res.send('Specific of category detail page')
-})
-
-/* GET List of categories page */
-router.get('/', (req, res) => {
-  res.send('List of categories')
-})
+/* GET category(s) */
+router
+  .get('/:category', category_get)
+  .get('/', categories_get)
 
 module.exports = router

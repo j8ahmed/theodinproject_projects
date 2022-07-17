@@ -1,42 +1,35 @@
 const express = require('express') 
 const router = express.Router()
+const {
+  item_get,
+  items_get,
+  create_item_get,
+  create_item_post,
+  update_item_get,
+  update_item_post,
+  delete_item_get,
+  delete_item_post,
+} = require('../../controllers/itemController')
 
-/* Create/Construct specific item page */
+/* Create */
 router
-  .get('/create', (req, res) => {
-    res.send('Get item construction form page')
-  })
-  .post('/create', (req, res) => {
-    res.send('POST item construction form')
-  })
+  .get('/create', create_item_get)
+  .post('/create', create_item_post)
 
-/* Update specific item page */
+/* Update */
 router
-  .get('/:item/update', (req, res) => {
-    res.send('GET item update form')
-  })
-  .post('/:item/update', (req, res) => {
-    res.send('POST item update form')
-  })
+  .get('/:item/update', update_item_get)
+  .post('/:item/update', update_item_post)
 
-/* Delete specific item page */
+/* Delete */
 router
-  .get('/:item/delete', (req, res) => {
-    res.send('GET item delete form')
-  })
-  .post('/:item/delete', (req, res) => {
-    res.send('POST item delete form')
-  })
+  .get('/:item/delete', delete_item_get)
+  .post('/:item/delete', delete_item_post)
 
-/* GET specific item page */
-router.get('/:item', (req, res) => {
-  res.send('Get specific item')
-})
-
-/* GET List of items page */
-router.get('/', (req, res) => {
-  res.send('List of items')
-})
+/* GET Item(s) */
+router
+  .get('/:item', item_get)
+  .get('/', items_get)
 
 
 
