@@ -15,10 +15,10 @@ const ItemSchema = new Schema({
     type: String,
     required: true,
   },
-  stockQuantity: {
+  quantity: {
     type: Number,
     required: true,
-  }
+  },
   category: [{ type: Schema.Types.ObjectId, ref: 'Category'}],
 })
 

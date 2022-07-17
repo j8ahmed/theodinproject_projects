@@ -96,9 +96,11 @@ Routes
 3. [x] Construct Routes and add to app initializer
 4. [x] Construct Controllers skeleton
 5. [x] Construct Models
-   - [ ] Populate the database with dummy data
+   - [x] Populate the database with dummy data
 6. [ ] Construct Views
 7. [ ] Construct each handler in Controllers
+   - [ ] Add Model info and view info to each item controller callback function
+   - [ ] Add Model info and view info to each categor controller callback function
 
 
 ---

@@ -11,7 +11,7 @@ const itemRouter = require('./routes/item/')
 const categoryRouter = require('./routes/category/')
 
 // Connect to Database
-mongoose.connect('mongodb://127.0.0.1:27017/invetory_management_app', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb://127.0.0.1:27017/inventory_management_app', {useNewUrlParser: true, useUnifiedTopology: true})
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
