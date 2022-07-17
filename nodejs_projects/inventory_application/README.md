@@ -94,9 +94,11 @@ Routes
 1. [x] Finish writing basic plans for the app.
 2. [x] Construct file/folder structure skeleton for the app.
 3. [x] Construct Routes and add to app initializer
-4. [ ] Construct Controllers
-5. [ ] Construct Models
+4. [x] Construct Controllers skeleton
+5. [x] Construct Models
+   - [ ] Populate the database with dummy data
 6. [ ] Construct Views
+7. [ ] Construct each handler in Controllers
 
 
 ---
