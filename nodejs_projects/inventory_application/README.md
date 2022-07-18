@@ -97,11 +97,12 @@ Routes
 4. [x] Construct Controllers skeleton
 5. [x] Construct Models
    - [x] Populate the database with dummy data
-6. [ ] Construct Views (Skeleton -> render from controller)
+6. [x] Construct Views (Skeleton -> render from controller)
    - [x] List entries (items/categories)
    - [x] detail entry (items/categories)
-   - [ ] form (items/categories)
-7. [ ] Construct each handler in Controllers
+   - [x] form (items/categories)
+7. [ ] Take notes on implementation of middleware and add needed middleware to app
+8. [ ] Construct each handler in Controllers
    - [ ] Add Model info and view info to each item controller callback function
    - [ ] Add Model info and view info to each category controller callback function
 

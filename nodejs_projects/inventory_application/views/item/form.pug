@@ -6,7 +6,7 @@ block content
   form(method='POST' action='')
     div.form-group
       label(for='name') Item Name:
-      input#title.form-control(type='text', placeholder='Name of item' name='name' required='true' value=(item === undefined ? '' : item.name) )
+      input#name.form-control(type='text', placeholder='Name of item' name='name' required='true' value=(item === undefined ? '' : item.name) )
     div.form-group
       label(for='category') Category:
       select#category.form-control(type='select', placeholder='Select Category' name='category' required='true' )

@@ -1,7 +1,7 @@
 
 
 exports.create_category_get = (req, res, next) => {
-  res.send('GET category Construction Page')
+  res.render('category/form', {title: 'Add a New Category', category: {}})
 }
 
 exports.create_category_post = (req, res, next) => {

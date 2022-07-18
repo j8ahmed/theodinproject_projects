@@ -1,7 +1,7 @@
 
 
 exports.create_item_get = (req, res, next) => {
-  res.render('item/form', {title: 'Construct a New Item', categories: []})
+  res.render('item/form', {title: 'Add a New Item', item: {}, categories: []})
 }
 
 exports.create_item_post = (req, res, next) => {
