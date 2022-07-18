@@ -1,6 +1,5 @@
 
 
-
 exports.index = (req, res, next) => {
-  res.send('Home Page')
+  res.render('index/home', {title: 'Home Page'})
 }

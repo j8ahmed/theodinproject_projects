@@ -1,0 +1,14 @@
+extends ../templates/layout
+
+block content
+  h1= title
+
+  ul
+    each category in categories
+      li
+        There is a category
+
+    else
+      li There are no categories.
+
+

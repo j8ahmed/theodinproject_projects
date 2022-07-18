@@ -1,0 +1,17 @@
+extends ../templates/layout
+
+block content
+  if category.name
+    h1 Category: #{category.name}
+
+    p #[strong Description:] #{category.description}
+
+    hr
+    p
+      a(href=category.url+'/delete') Delete category
+    p
+      a(href=category.url+'/update') Update category
+  else
+    p No category found
+
+

@@ -32,7 +32,7 @@ Fields:
   - price
   - category
   - description
-  - stock-quantity
+  - quantity
   - Virtuals
     - url
 
@@ -97,10 +97,13 @@ Routes
 4. [x] Construct Controllers skeleton
 5. [x] Construct Models
    - [x] Populate the database with dummy data
-6. [ ] Construct Views
+6. [ ] Construct Views (Skeleton -> render from controller)
+   - [x] List entries (items/categories)
+   - [x] detail entry (items/categories)
+   - [ ] form (items/categories)
 7. [ ] Construct each handler in Controllers
    - [ ] Add Model info and view info to each item controller callback function
-   - [ ] Add Model info and view info to each categor controller callback function
+   - [ ] Add Model info and view info to each category controller callback function
 
 
 ---

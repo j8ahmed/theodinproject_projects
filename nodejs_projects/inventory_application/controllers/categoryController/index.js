@@ -9,11 +9,11 @@ exports.create_category_post = (req, res, next) => {
 }
 
 exports.categories_get = (req, res, next) => {
-  res.send('GET categories List Page')
+  res.render('category/categories', {title: 'All Iventory Categories', categories: []})
 }
 
 exports.category_get = (req, res, next) => {
-  res.send('GET One category Page')
+  res.render('category/detail', {title: 'Category Detail Pagee', category: {}})
 }
 
 exports.update_category_get = (req, res, next) => {

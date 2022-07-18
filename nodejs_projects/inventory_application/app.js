@@ -21,6 +21,10 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const app = express()
 
 
+// Setup views for app
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
 app.use('/', indexRouter)
 app.use('/items', itemRouter)
 app.use('/categories', categoryRouter)

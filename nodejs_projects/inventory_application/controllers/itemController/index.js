@@ -1,7 +1,7 @@
 
 
 exports.create_item_get = (req, res, next) => {
-  res.send('GET Item Construction Page')
+  res.render('item/form', {title: 'Construct a New Item', categories: []})
 }
 
 exports.create_item_post = (req, res, next) => {
@@ -9,11 +9,11 @@ exports.create_item_post = (req, res, next) => {
 }
 
 exports.items_get = (req, res, next) => {
-  res.send('GET Items List Page')
+  res.render('item/items', {title: 'All Iventory Items', items: []})
 }
 
 exports.item_get = (req, res, next) => {
-  res.send('GET One Item Page')
+  res.render('item/detail', {title: 'Item Detail Pagee', item: {}})
 }
 
 exports.update_item_get = (req, res, next) => {
