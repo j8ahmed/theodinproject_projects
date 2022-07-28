@@ -6,7 +6,9 @@ block content
   ul
     each category in categories
       li
-        There is a category
+        h3 category Name: !{category.name}
+        p Description: !{category.description}
+        a(href=category.url) View category
 
     else
       li There are no categories.

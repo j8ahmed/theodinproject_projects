@@ -6,7 +6,11 @@ block content
   ul
     each item in items
       li
-        There is an item
+        h3 Item Name: !{item.name}
+        h4 Item Price: !{item.price}
+        p Description: !{item.description}
+        a(href=item.url) View Item
+	
 
     else
       li There are no items.

@@ -8,26 +8,12 @@ block content
       label(for='name') Item Name:
       input#name.form-control(type='text', placeholder='Name of item' name='name' required='true' value=(item === undefined ? '' : item.name) )
     div.form-group
-      label(for='category') Category:
-      select#category.form-control(type='select', placeholder='Select Category' name='category' required='true' )
-        - 
-          categories.sort((a, b) => {
-            let textA = a.name.toUpperCase()
-            let textB = b.name.toUpperCase()
-            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0
-          })
+      label Category:
+      div
         for category in categories
-          if item
-            //- Handle GET form, where item.category is an object, and POST form, where it is a string.
-            option(
-              value=category._id
-              selected=(
-                category._id.toString() == item.category._id
-                || category._id.toString() == item.category
-              ) ? 'selected' : false
-            ) #{category.name}
-          else
-            option(value=category._id) #{category.name}
+          div(style='display: inline; padding-right:10px;')
+            input.checkbox-input(type='checkbox', name='categories', id=category._id, value=category._id, checked=category.checked )
+            label(for=category._id) #{category.name}
     div.form-group
       label(for='description') Description:
       textarea#description.form-control(type='textarea', placeholder='Description' name='description' required='true') #{item === undefined ? '' : item.description}
