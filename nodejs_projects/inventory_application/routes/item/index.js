@@ -18,17 +18,17 @@ router
 
 /* Update */
 router
-  .get('/:item/update', update_item_get)
-  .post('/:item/update', update_item_post)
+  .get('/:id/update', update_item_get)
+  .post('/:id/update', update_item_post)
 
 /* Delete */
 router
-  .get('/:item/delete', delete_item_get)
-  .post('/:item/delete', delete_item_post)
+  .get('/:id/delete', delete_item_get)
+  .post('/:id/delete', delete_item_post)
 
 /* GET Item(s) */
 router
-  .get('/:item', item_get)
+  .get('/:id', item_get)
   .get('/', items_get)
 
 

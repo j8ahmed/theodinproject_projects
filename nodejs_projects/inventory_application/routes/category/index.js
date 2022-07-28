@@ -19,17 +19,17 @@ router
 
 /* Update */
 router
-  .get('/:category/update', update_category_get)
-  .post('/:category/update', update_category_post)
+  .get('/:id/update', update_category_get)
+  .post('/:id/update', update_category_post)
 
 /* Delete */
 router
-  .get('/:category/delete', delete_category_get)
-  .post('/:category/delete', delete_category_post)
+  .get('/:id/delete', delete_category_get)
+  .post('/:id/delete', delete_category_post)
 
 /* GET category(s) */
 router
-  .get('/:category', category_get)
+  .get('/:id', category_get)
   .get('/', categories_get)
 
 module.exports = router
