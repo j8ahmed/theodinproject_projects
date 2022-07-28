@@ -1,0 +1,16 @@
+extends ../templates/layout
+
+block content
+  h1= title
+  p Here is my #[em Inventory Management Application]. It is an MVP of a full stack app built based off of the local library tutorial I previously completed.
+
+  h1 Dynamic content
+
+  if error
+    p Error getting dynamic content.
+  else
+    p We have the following records:
+
+    ul
+      li #[strong Items:] !{data.item_count}
+      li #[strong Categories:] !{data.category_count}
