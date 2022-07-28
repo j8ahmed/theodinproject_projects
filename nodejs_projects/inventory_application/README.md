@@ -101,10 +101,10 @@ Routes
    - [x] List entries (items/categories)
    - [x] detail entry (items/categories)
    - [x] form (items/categories)
-7. [ ] Take notes on implementation of middleware and add needed middleware to app
-8. [ ] Construct each handler in Controllers
-   - [ ] Add Model info and view info to each item controller callback function
-   - [ ] Add Model info and view info to each category controller callback function
+7. [x] Take notes on implementation of middleware and add needed middleware to app
+8. [x] Construct each handler in Controllers
+   - [x] Add Model info and view info to each item controller callback function
+   - [x] Add Model info and view info to each category controller callback function
 
 
 ---
