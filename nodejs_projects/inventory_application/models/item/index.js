@@ -19,7 +19,7 @@ const ItemSchema = new Schema({
     type: Number,
     required: true,
   },
-  category: [{ type: Schema.Types.ObjectId, ref: 'Category'}],
+  categories: [{ type: Schema.Types.ObjectId, ref: 'Category'}],
 })
 
 ItemSchema.virtual('url').get(function(){
