@@ -72,7 +72,7 @@ Add Message ('/add-message') -> Only accessible for logged in users
 - [x] Build out rough plan for project
 - [ ] Build skeleton for project structure:
     - [ ] routes
-    - [ ] models 
+    - [x] models 
     - [ ] views
     - [ ] controllers? (Not sure if I need to have separate controllers for this app. Is it big enough to warrant this?)
     
