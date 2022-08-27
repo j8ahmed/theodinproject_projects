@@ -60,6 +60,10 @@ Membership ('/membership')
 - GET
 - POST
 
+Admin ('/admin')
+- GET
+- POST
+
 Add Message ('/add-message') -> Only accessible for logged in users
 - GET (AUTH REQUIRED FOR ACCESS)
 - POST (AUTH REQUIRED FOR ACCESS)
@@ -73,7 +77,7 @@ Add Message ('/add-message') -> Only accessible for logged in users
 - [ ] Build skeleton for project structure:
     - [ ] routes
     - [x] models 
-    - [ ] views
+    - [x] views
     - [ ] controllers? (Not sure if I need to have separate controllers for this app. Is it big enough to warrant this?)
     
 - [ ] Build and test basic express app 
