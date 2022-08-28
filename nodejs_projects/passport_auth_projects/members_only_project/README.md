@@ -80,7 +80,7 @@ Add Message ('/add-message') -> Only accessible for logged in users
     - [x] views
     - [x] controllers 
     
-- [ ] Build and test basic express app 
+- [x] Build and test basic express app without authentication
 - [ ] 
 - [ ] 
 - [ ] 
