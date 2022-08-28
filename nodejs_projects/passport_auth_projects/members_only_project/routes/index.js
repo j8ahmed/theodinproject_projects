@@ -1,57 +1,37 @@
 const router = require('express').Router()
+const {signup, login, admin, membership, index, addMessage } = require('./controllers')
 
-router.get('/', (req, res, next) => {
-  res.redirect('index')
-})
+router.get('/', index)
 
 
 /* Sign-up Page*/
 router
-  .get('/sign-up', (req, res, next) => {
-    res.redirect('sign-up')
-  })
-  .post('/sign-up', (req, res, next) => {
-    res.redirect('sign-up')
-  })
+  .get('/sign-up', signup.getSignupPage)
+  .post('/sign-up', signup.postSignupPage)
 
 
 /* Login Page */
 router
-  .get('/login', (req, res, next) => {
-    res.redirect('login')
-  })
-  .post('/login', (req, res, next) => {
-    res.redirect('login')
-  })
+  .get('/login', login.getLoginPage)
+  .post('/login', login.postLoginPage)
 
 
 /* Membership Page */
 router
-  .get('/membership', (req, res, next) => {
-    res.redirect('membership')
-  })
-  .post('/membership', (req, res, next) => {
-    res.redirect('membership')
-  })
+  .get('/membership', membership.getMembershipPage)
+  .post('/membership', membership.postMembershipPage)
 
 
 /* Admin Page */
 router
-  .get('/membership', (req, res, next) => {
-    res.redirect('membership')
-  })
-  .post('/membership', (req, res, next) => {
-    res.redirect('membership')
-  })
+  .get('/membership', admin.getAdminPage)
+  .post('/membership', admin.postAdminPage)
+
 
 /* Add Message */
 router
-  .get('/add-message', (req, res, next) => {
-    res.redirect('add-message')
-  })
-  .post('/add-message', (req, res, next) => {
-    res.redirect('add-message')
-  })
+  .get('/add-message', addMessage.getAddMessagePage)
+  .post('/add-message', addMessage.postAddMessagePage)
 
 
 module.exports = router
