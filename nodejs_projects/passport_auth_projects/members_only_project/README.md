@@ -81,7 +81,15 @@ Add Message ('/add-message') -> Only accessible for logged in users
     - [x] controllers 
     
 - [x] Build and test basic express app without authentication
-- [ ] 
+- [ ] Build out required Features as MVP 
+    - [ ] Build Authentication Feature
+    - [ ] Build Login
+    - [ ] Build Sign-up
+    - [ ] Build Add New Message Form
+    - [ ] Build Build Membership Sign-up
+    - [ ] Build Build Admin sign-up
+    - [ ] Build home page with Messages being displayed
+    - [ ] Build user access limitations for messages and pages
 - [ ] 
 - [ ] 
 
