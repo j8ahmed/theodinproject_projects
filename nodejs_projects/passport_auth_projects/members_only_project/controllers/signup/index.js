@@ -1,4 +1,5 @@
 const User = require('../../models/User')
+const bcrypt = require('bcryptjs')
 
 
 exports.getSignupPage = [
@@ -7,11 +8,16 @@ exports.getSignupPage = [
   }
 ]
 
-exports.postSignupPage = [
-  (req, res, next) => {
-    console.log('FILL IN WITH SUBMISSION HANDLING')
-    res.redirect('index')
-  }
-]
+exports.postSignupPage = (req, res, next) => {
+  bcrypt.hash(req.body.password, 10, (err, hashedPassword) => {
+    const user = new User({
+      username: req.body.username,
+      password: hashedPassword,
+    }).save(err => {
+      if (err) return next(err)
+      res.redirect('index')
+    })
+  })
+}
 
 

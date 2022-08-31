@@ -1,5 +1,4 @@
-const User = require('../../models/User')
-
+const passport = require('../../app').passport
 
 exports.getLoginPage = [
   (req, res, next) => {
@@ -8,9 +7,9 @@ exports.getLoginPage = [
 ]
 
 exports.postLoginPage = [
-  (req, res, next) => {
-    console.log('FILL IN WITH SUBMISSION HANDLING')
-    res.redirect('index')
-  }
+  passport.authenticate('local', {
+    successRedirect: 'index',
+    failureRedirect: '/login',
+  })
 ]
 
