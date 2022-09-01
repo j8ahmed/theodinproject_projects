@@ -82,8 +82,8 @@ Add Message ('/add-message') -> Only accessible for logged in users
     
 - [x] Build and test basic express app without authentication
 - [ ] Build out required Features as MVP 
-    - [ ] Build Authentication Feature
-    - [ ] Build Login
+    - [x] Build Authentication Feature (Need to test. Honestly should not have done this first)
+    - [x] Build Login (Need to test. Honestly should have done this after building the sign-up feature. That way I can add some test accountsto the app to test login and authentication)
     - [ ] Build Sign-up
     - [ ] Build Add New Message Form
     - [ ] Build Build Membership Sign-up
