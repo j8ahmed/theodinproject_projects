@@ -8,7 +8,7 @@ exports.getLoginPage = [
 
 exports.postLoginPage = [
   passport.authenticate('local', {
-    successRedirect: 'index',
+    successRedirect: '/',
     failureRedirect: '/login',
   })
 ]

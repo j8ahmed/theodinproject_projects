@@ -95,6 +95,24 @@ Add Message ('/add-message') -> Only accessible for logged in users
 
 ---
 
+## Test Data
+
+```
+User Accounts:
+--------------
+
+username: jamal
+password: jamal
+firstname: Jamal
+lastname: Ahmed
+
+
+
+
+```
+
+---
+
 ## Bugs / Issues
 
 
