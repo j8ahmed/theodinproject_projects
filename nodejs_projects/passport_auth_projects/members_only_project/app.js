@@ -7,6 +7,7 @@ const session = require("express-session")
 const passport = exports.passport = require("passport")
 const bcrypt = require("bcryptjs")
 const LocalStrategy = require("passport-local").Strategy
+const createError = require('http-errors');
 
 const router = require('./routes')
 const User = require('./models/User')
@@ -77,10 +78,23 @@ app.use((req, res, next) => {
   next()
 })
 
-
-
-
 app.use('/', router)
+
+// Catch all 404 errors and forward to error handler
+app.use((req, res, next) => { next(createError(404)) })
+
+//Error Handler
+app.use((err, req, res, next) => {
+  // set locals, only providing error in development
+  res.locals.message = err.message
+  res.locals.error = req.app.get('env') === 'development' ? err : {}
+  console.log(err.message)
+
+  // render the error page
+  res.status(err.status || 500)
+  res.render('error')
+})
+
 
 
 app.listen(3000, () => console.log("app listening on port 3000!"))
