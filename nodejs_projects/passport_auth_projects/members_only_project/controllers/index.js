@@ -4,12 +4,16 @@ const userController = require('./user')
 const adminController = require('./admin')
 const loginController = require('./login')
 const signupController = require('./signup')
+const Message = require('../models/Message')
 
 /* Home Page Controller */
 
 const indexController = [
   (req, res, next) => {
-    res.render('index')
+    Message.find({}).exec((err, messages) => {
+      if (err) return next(err)
+      res.render('index', {messages})
+    })
   }
 ]
 

@@ -13,9 +13,24 @@
       <h1>Messages GO HERE</h1>
     </div>
 
-    <% if (currentUser) {%>
+    <% if (currentUser) { %>
       <h1>WELCOME BACK <%= currentUser.username %></h1>
+      <a href="/add-message">Add New Message</a>
       <a href="/log-out">LOG OUT</a>
+    <% } else { %>
+      <a href="/login">LOGIN</a>
+    <% } %>
+
+    <% if (messages) { %>
+      <h2>Messages:</h2>
+      <ul>
+	<% messages.map(msg => { %>
+
+	  <li><%= msg.title %></li>
+
+	<% }) %>
+
+      </ul>
     <% } %>
 
   </body>

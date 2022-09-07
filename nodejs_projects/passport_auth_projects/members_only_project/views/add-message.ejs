@@ -7,28 +7,16 @@
   </head>
 
   <body>
+    <% /* This web page should only be accessible to users who are logged in. */ %>
 
-    <div>
-      <h1>Add Message form HERE!!!</h1>
-    </div>
-
-    <!--
-
-    <% if (user) {%>
-      <h1>WELCOME BACK <%= user.username %></h1>
-      <a href="/log-out">LOG OUT</a>
-    <% } else { %>
-      <h1>please log in</h1>
-      <form action="/log-in" method="POST">
-        <label for="username">Username</label>
-        <input name="username" placeholder="username" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <button>Log In</button>
-      </form>
-    <%}%>
-
-    -->
+    <h1>Add Message</h1>
+    <form action="/add-message" method="POST">
+      <label for="title">Title</label>
+      <input name="title" placeholder="Message Title" type="text" />
+      <label for="text">Text</label>
+      <input name="text" type="text" />
+      <button>Add</button>
+    </form>
 
   </body>
 
