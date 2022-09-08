@@ -9,30 +9,31 @@
   <body>
     <h1>Home Page</h1>
 
-    <div>
-      <h1>Messages GO HERE</h1>
-    </div>
 
     <% if (currentUser) { %>
       <h1>WELCOME BACK <%= currentUser.username %></h1>
       <h3>Member Status: <%= currentUser.isMember ? 'Member' : 'Not a Member' %></h3>
+      <h3>Admin Status: <%= currentUser.isAdmin ? 'Admin' : 'Not an Admin' %></h3>
       <p><a href="/add-message">Add New Message</a></p>
       <p><a href="/membership">Become a member</a></p>
+      <p><a href="/admin">Become an admin</a></p>
       <p><a href="/log-out">LOG OUT</a></p>
     <% } else { %>
       <a href="/login">LOGIN</a>
     <% } %>
 
     <% if (messages) { %>
-      <h2>Messages:</h2>
-      <ul>
-	<% messages.map(msg => { %>
+      <div>
+        <h2>Messages:</h2>
+        <ul>
+          <% messages.map(msg => { %>
 
-	  <li><%= msg.title %></li>
+            <li><%= msg.title %></li>
 
-	<% }) %>
+          <% }) %>
 
-      </ul>
+        </ul>
+      </div>
     <% } %>
 
   </body>
