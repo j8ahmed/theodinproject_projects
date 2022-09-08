@@ -3,6 +3,7 @@ const addMessageController = require('./addMessage')
 const userController = require('./user')
 const adminController = require('./admin')
 const loginController = require('./login')
+const logoutController = require('./logout')
 const signupController = require('./signup')
 const Message = require('../models/Message')
 
@@ -27,5 +28,6 @@ module.exports = {
   admin: adminController,
   index: indexController,
   login: loginController,
+  logout: logoutController,
   signup: signupController,
 }

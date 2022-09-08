@@ -93,10 +93,10 @@ Add Message ('/add-message') -> Only accessible for logged in users
     - [x] Build Add New Message Form
       - [x] Need to deal with error handling (404 errors, 401 errors)
     - [x] Build Build Membership Sign-up
-    - [ ] Build Build Admin sign-up
+    - [x] Build Build Admin sign-up
     - [x] Build home page with Messages being displayed
     - [ ] Build user access limitations for messages and pages
-    - [ ] Build user logout
+    - [x] Build user logout
 - [ ] 
 - [ ] 
 

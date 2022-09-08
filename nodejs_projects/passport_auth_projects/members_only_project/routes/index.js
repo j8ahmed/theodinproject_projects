@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {signup, login, admin, membership, index, addMessage } = require('../controllers')
+const {signup, login, logout, admin, membership, index, addMessage } = require('../controllers')
 
 router.get('/', index)
 
@@ -15,6 +15,8 @@ router
   .get('/login', login.getLoginPage)
   .post('/login', login.postLoginPage)
 
+router
+  .get('/logout', logout.getLogoutPage)
 
 /* Membership Page */
 router
