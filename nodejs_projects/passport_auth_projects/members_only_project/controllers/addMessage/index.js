@@ -22,14 +22,6 @@ exports.postAddMessagePage = [
   body('title', 'Title must not be empty.').trim().isLength({ min: 1 }).escape(),
   body('text', 'Text must not be empty.').trim().isLength({ min: 1 }).escape(),
   (req, res, next) => {
-    /*
-     * Steps:
-     * 1. authenticate the data being sent
-     * 2. Get associated user data
-     * 3. Construct a new Message record
-     * 4. Save the new message record
-     * 5. redirect to the home page
-     */
     const errors = validationResult(req)
     const {title, text} = req.body
 
@@ -47,7 +39,7 @@ exports.postAddMessagePage = [
 
       message.save((err) => {
 	if (err) return next(err)
-	//successful - redirect to new book record.
+	//successful - redirect to home page
 	res.redirect('/')
       })
       return

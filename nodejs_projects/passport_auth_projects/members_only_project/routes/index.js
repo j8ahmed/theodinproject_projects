@@ -24,8 +24,8 @@ router
 
 /* Admin Page */
 router
-  .get('/membership', admin.getAdminPage)
-  .post('/membership', admin.postAdminPage)
+  .get('/admin', admin.getAdminPage)
+  .post('/admin', admin.postAdminPage)
 
 
 /* Add Message */

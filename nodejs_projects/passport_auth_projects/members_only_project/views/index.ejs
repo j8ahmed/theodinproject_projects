@@ -15,8 +15,10 @@
 
     <% if (currentUser) { %>
       <h1>WELCOME BACK <%= currentUser.username %></h1>
-      <a href="/add-message">Add New Message</a>
-      <a href="/log-out">LOG OUT</a>
+      <h3>Member Status: <%= currentUser.isMember ? 'Member' : 'Not a Member' %></h3>
+      <p><a href="/add-message">Add New Message</a></p>
+      <p><a href="/membership">Become a member</a></p>
+      <p><a href="/log-out">LOG OUT</a></p>
     <% } else { %>
       <a href="/login">LOGIN</a>
     <% } %>

@@ -8,27 +8,25 @@
 
   <body>
 
-    <div>
-      <h1>Membership Page info Goes here</h1>
-    </div>
+    <% if (errors) { %>
+      <div id="errors-cont">
+	<% errors.map(err => { %>
+	  <p><%= err.msg %></p>
+        <% }) %>
+      </div>
+    <% } %>
 
-    <! --
-
-    <% if (user) {%>
-      <h1>WELCOME BACK <%= user.username %></h1>
-      <a href="/log-out">LOG OUT</a>
-    <% } else { %>
-      <h1>please log in</h1>
-      <form action="/log-in" method="POST">
-        <label for="username">Username</label>
-        <input name="username" placeholder="username" type="text" />
-        <label for="password">Password</label>
-        <input name="password" type="password" />
-        <button>Log In</button>
+    <% if (currentUser) {%>
+      <h1>Become a Member</h1>
+      <form action="/membership" method="POST">
+        <label for="password">Enter Membership Code</label>
+        <input name="password" placeholder="Membership Code" type="password" />
+        <button>Submit</button>
       </form>
+    <% } else { %>
+      <h2>You Must be logged in to access this page</h2>
     <%}%>
 
-    -->
   </body>
 
 </html>

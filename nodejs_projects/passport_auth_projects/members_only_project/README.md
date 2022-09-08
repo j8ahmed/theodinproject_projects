@@ -83,11 +83,13 @@ Add Message ('/add-message') -> Only accessible for logged in users
 - [x] Build and test basic express app without authentication
 - [ ] Build out required Features as MVP 
     - [x] Build Authentication Feature (Need to test. Honestly should not have done this first)
-    - [x] Build Login (Need to test. Honestly should have done this after building the sign-up feature. That way I can add some test accountsto the app to test login and authentication)
+    - [x] Build Login (Need to test. Honestly should have done this after
+          building the sign-up feature. That way I can add some test accountsto the
+          app to test login and authentication)
     - [x] Build Sign-up
     - [x] Build Add New Message Form
       - [x] Need to deal with error handling (404 errors, 401 errors)
-    - [ ] Build Build Membership Sign-up
+    - [x] Build Build Membership Sign-up
     - [ ] Build Build Admin sign-up
     - [x] Build home page with Messages being displayed
     - [ ] Build user access limitations for messages and pages
