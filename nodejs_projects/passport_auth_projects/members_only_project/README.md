@@ -56,6 +56,9 @@ Log In ('/login')
 - GET
 - POST
 
+Log Out ('/logout')
+- GET
+
 Membership ('/membership')
 - GET
 - POST
@@ -93,6 +96,7 @@ Add Message ('/add-message') -> Only accessible for logged in users
     - [ ] Build Build Admin sign-up
     - [x] Build home page with Messages being displayed
     - [ ] Build user access limitations for messages and pages
+    - [ ] Build user logout
 - [ ] 
 - [ ] 
 
