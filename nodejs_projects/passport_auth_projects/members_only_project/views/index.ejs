@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Members Only Project - Jamal J8 Ahmed</title>
+  </head>
+
+  <body>
+    <h1>Home Page</h1>
+
+
+    <% if (currentUser) { %>
+      <h1>WELCOME BACK <%= currentUser.username %></h1>
+      <h3>Member Status: <%= currentUser.isMember ? 'Member' : 'Not a Member' %></h3>
+      <h3>Admin Status: <%= currentUser.isAdmin ? 'Admin' : 'Not an Admin' %></h3>
+      <p><a href="/add-message">Add New Message</a></p>
+      <p><a href="/membership">Become a member</a></p>
+      <p><a href="/admin">Become an admin</a></p>
+      <p><a href="/logout">LOG OUT</a></p>
+    <% } else { %>
+      <a href="/sign-up">Sign Up</a>
+      <a href="/login">LOGIN</a>
+    <% } %>
+
+    <% if (messages) { %>
+      <div>
+        <h2>Messages:</h2>
+        <ul>
+          <% messages.map(msg => { %>
+
+            <li>
+	      <h3><%= msg.title %></h3>
+	      <p><%= msg.text %></p>
+	      <% if (currentUser) { %>
+	        <a href='<%= `/delete-message/${msg._id}` %>' style='color: red'><button>Delete</button></a>
+	      <% } %>
+	    </li>
+
+          <% }) %>
+
+        </ul>
+      </div>
+    <% } %>
+
+  </body>
+
+</html>
+

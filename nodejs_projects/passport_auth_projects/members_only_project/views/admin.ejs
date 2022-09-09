@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Members Only - Admin Page</title>
+  </head>
+
+  <body>
+
+    <% if (errors) { %>
+      <div id="errors-cont">
+	<% errors.map(err => { %>
+	  <p><%= err.msg %></p>
+        <% }) %>
+      </div>
+    <% } %>
+
+    <% if (currentUser) {%>
+      <h1>Become an Admin</h1>
+      <form action="/admin" method="POST">
+        <label for="password">Enter Admin Code</label>
+        <input name="password" placeholder="Admin Code" type="password" />
+        <button>Submit</button>
+      </form>
+    <% } else { %>
+      <h2>You Must be logged in to access this page</h2>
+    <%}%>
+
+  </body>
+
+</html>
+
+
+
