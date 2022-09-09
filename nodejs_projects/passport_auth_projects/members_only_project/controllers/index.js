@@ -1,5 +1,6 @@
 const membershipController = require('./membership')
 const addMessageController = require('./addMessage')
+const deleteMessageController = require('./deleteMessage')
 const userController = require('./user')
 const adminController = require('./admin')
 const loginController = require('./login')
@@ -24,6 +25,7 @@ const indexController = [
 module.exports = {
   membership: membershipController,
   addMessage: addMessageController,
+  deleteMessage: deleteMessageController,
   user: userController,
   admin: adminController,
   index: indexController,

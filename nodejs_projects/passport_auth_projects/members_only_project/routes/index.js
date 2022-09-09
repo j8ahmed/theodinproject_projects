@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const {signup, login, logout, admin, membership, index, addMessage } = require('../controllers')
+const {signup, login, logout, admin, membership, index, addMessage, deleteMessage } = require('../controllers')
 
 router.get('/', index)
 
@@ -35,5 +35,7 @@ router
   .get('/add-message', addMessage.getAddMessagePage)
   .post('/add-message', addMessage.postAddMessagePage)
 
+router
+  .get('/delete-message/:id', deleteMessage.getDeleteMessagePage)
 
 module.exports = router

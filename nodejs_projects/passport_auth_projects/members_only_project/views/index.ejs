@@ -29,7 +29,13 @@
         <ul>
           <% messages.map(msg => { %>
 
-            <li><%= msg.title %></li>
+            <li>
+	      <h3><%= msg.title %></h3>
+	      <p><%= msg.text %></p>
+	      <% if (currentUser) { %>
+	        <a href='<%= `/delete-message/${msg._id}` %>' style='color: red'><button>Delete</button></a>
+	      <% } %>
+	    </li>
 
           <% }) %>
 

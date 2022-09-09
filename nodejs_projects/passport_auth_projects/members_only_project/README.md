@@ -71,6 +71,8 @@ Add Message ('/add-message') -> Only accessible for logged in users
 - GET (AUTH REQUIRED FOR ACCESS)
 - POST (AUTH REQUIRED FOR ACCESS)
 
+Delete Message ('/delete-message') -> Only accessible for logged in users
+- GET (AUTH REQUIRED FOR ACCESS) -> Delete the message provided in the URL params
 ```
 
 
@@ -84,7 +86,7 @@ Add Message ('/add-message') -> Only accessible for logged in users
     - [x] controllers 
     
 - [x] Build and test basic express app without authentication
-- [ ] Build out required Features as MVP 
+- [x] Build out required Features as MVP 
     - [x] Build Authentication Feature (Need to test. Honestly should not have done this first)
     - [x] Build Login (Need to test. Honestly should have done this after
           building the sign-up feature. That way I can add some test accountsto the
@@ -95,10 +97,8 @@ Add Message ('/add-message') -> Only accessible for logged in users
     - [x] Build Build Membership Sign-up
     - [x] Build Build Admin sign-up
     - [x] Build home page with Messages being displayed
-    - [ ] Build user access limitations for messages and pages
+    - [x] Build user access limitations for messages and pages
     - [x] Build user logout
-- [ ] 
-- [ ] 
 
 ---
 
